@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+   <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+   <meta name="viewport" content="width=device-width" />
+
+   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+   <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+   <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+   <link rel="stylesheet" type="text/css" href="main.css">
+   <script>
+   	$('.toggle-tickets').click(function() {
+  		$tickets = $(this).parent().siblings('.collapse');
+
+  		if ($tickets.hasClass('in')) {
+    			$tickets.collapse('hide');
+    			$(this).html('Show Tickets');
+    			$(this).closest('.ticket-card').removeClass('active');
+  		} else {
+    			$tickets.collapse('show');
+    			$(this).html('Hide Tickets');
+   			$(this).closest('.ticket-card').addClass('active');
+  		}
+	});
+   </script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="container">
+      <div class="neon">Bitlet</div>
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-6">
+          <div class="ticket-card">
+            <div class="cover">
+              <img src="https://static.pexels.com/photos/196652/pexels-photo-196652.jpeg" alt="" />
+              <div class="info">
+                <div class="going">
+                  <i class="fa fa-group"></i> 4,234 Going
+                </div>
+                <div class="tickets-left">
+                  <i class="fa fa-ticket"></i> 240 Tickets Left
+                </div>
+              </div>
+            </div>
+            <div class="body">
+
+              <div class="artist">
+                <h6 class="info">Fan</h6>
+                <h4 class="name">Benefits</h4>
+              </div>
+              <div class="price">
+                <div class="from">From</div>
+                <div class="value">
+                  <b>$</b>599
+                </div>
+              </div>
+
+              <div class="clearfix"></div>
+              <div class="info">
+                <p class="location">
+                  <i class="fa fa-map-marker"></i> Worldwide
+                </p>
+                <p class="date">
+                  <i class="fa fa-calendar"></i> Spring 2018
+                </p>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <div class="collapse">
+              <ul class="list-unstyled">
+                <li>
+                  <div class="ticket">
+                    <h5>Real Tickets Guaranteed<br>
+                      <small>25 Tickets left</small>
+                    </h5>
+                  </div>
+                  <div class="price">
+                    <div class="value"><b>$</b>599</div>
+                  </div>
+                  <a href="#" class="btn btn-info btn-sm btn-buy">Buy Now!</a>
+                </li>
+                <li>
+                  <div class="ticket">
+                    <h5>Touters No More<br>
+                    <small>15 Tickets left</small>
+                  </h5>
+                  </div>
+                  <div class="price">
+                    <div class="value"><b>$</b>799</div>
+                  </div>
+                  <a href="#" class="btn btn-info btn-sm btn-buy">Buy Now!</a>
+                </li>
+                <li>
+                  <div class="ticket">
+                    <h5>Buying Tickets With Ease<br>
+                    <small>62 Tickets left</small>
+                  </h5>
+                  </div>
+                  <div class="price">
+                    <div class="value"><b>$</b>1,299</div>
+                  </div>
+                  <a href="#" class="btn btn-info btn-sm btn-buy">Buy Now!</a>
+                </li>
+                <li>
+                  <div class="ticket">
+                    <h5>Multiple Cryptocurrency Support<br>
+                    <small>6 Tickets left</small>
+                  </h5>
+                  </div>
+                  <div class="price">
+                    <div class="value"><b>$</b>1,799</div>
+                  </div>
+                  <a href="#" class="btn btn-info btn-sm btn-buy">Buy Now!</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer">
+              <button class="btn toggle-tickets">Show Tickets</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-6">
+          <div class="ticket-card active">
+            <div class="cover">
+              <img src="https://static.pexels.com/photos/154147/pexels-photo-154147.jpeg" alt="" />
+              <div class="info">
+                <div class="going">
+                  <i class="fa fa-group"></i> 4,234 Going
+                </div>
+                <div class="tickets-left">
+                  <i class="fa fa-ticket"></i> 240 Tickets Left
+                </div>
+              </div>
+            </div>
+            <div class="body">
+              <div class="artist">
+                <h6 class="info">Blockchain</h6>
+                <h4 class="name">Ticketing Solutions</h4>
+              </div>
+              <div class="price">
+                <div class="from">From</div>
+                <div class="value">
+                  <b>$</b>699
+                </div>
+              </div>
+              <div class="clearfix"></div>
+              <div class="info">
+                <p class="location">
+                  <i class="fa fa-map-marker"></i> Gainesville, Florida
+                </p>
+                <p class="date">
+                  <i class="fa fa-calendar"></i> Spring 2018
+                </p>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <div class="collapse in">
+              <ul class="list-unstyled">
+                <li>
+                  <div class="ticket">
+                    <h5>Fraudulent Free<br>
+                      <small>25 Tickets left</small>
+                    </h5>
+                  </div>
+                  <div class="price">
+                    <div class="value"><b>$</b>699</div>
+                  </div>
+                  <a href="#" class="btn btn-info btn-sm btn-buy">Buy Now!</a>
+                </li>
+                <li>
+                  <div class="ticket">
+                    <h5>Fewer Fees<br>
+                    <small>15 Tickets left</small>
+                  </h5>
+                  </div>
+                  <div class="price">
+                    <div class="value"><b>$</b>799</div>
+                  </div>
+                  <a href="#" class="btn btn-info btn-sm btn-buy">Buy Now!</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer">
+              <button class="btn toggle-tickets">Hide Tickets</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-6">
+          <div class="ticket-card">
+            <div class="cover">
+              <img src="https://static.pexels.com/photos/518389/pexels-photo-518389.jpeg" alt="" />
+              <div class="info">
+                <div class="going">
+                  <i class="fa fa-group"></i> 4,234 Going
+                </div>
+                <div class="tickets-left">
+                  <i class="fa fa-ticket"></i> 240 Tickets Left
+                </div>
+              </div>
+            </div>
+            <div class="body">
+              <div class="artist">
+                <h6 class="info">Venue</h6>
+                <h4 class="name">Benefits</h4>
+              </div>
+              <div class="price">
+                <div class="from">From</div>
+                <div class="value">
+                  <b>$</b>499
+                </div>
+              </div>
+              <div class="clearfix"></div>
+              <div class="info">
+                <p class="location">
+                  <i class="fa fa-map-marker"></i> Worldwide
+                </p>
+                <p class="date">
+                  <i class="fa fa-calendar"></i> Spring 2018
+                </p>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <div class="collapse">
+              <ul class="list-unstyled">
+                <li>
+                  <div class="ticket">
+                    <h5>Near Instant Payouts<br>
+                      <small>25 Tickets left</small>
+                    </h5>
+                  </div>
+                  <div class="price">
+                    <div class="value"><b>$</b>499</div>
+                  </div>
+                  <a href="#" class="btn btn-info btn-sm btn-buy">Buy Now!</a>
+                </li>
+                <li>
+                  <div class="ticket">
+                    <h5>Customizable Ticket Functionality<br>
+                    <small>15 Tickets left</small>
+                  </h5>
+                  </div>
+                  <div class="price">
+                    <div class="value"><b>$</b>799</div>
+                  </div>
+                  <a href="#" class="btn btn-info btn-sm btn-buy">Buy Now!</a>
+                </li>
+                <li>
+                  <div class="ticket">
+                    <h5>Impossible to Counterfeit Tickets<br>
+                    <small>62 Tickets left</small>
+                  </h5>
+                  </div>
+                  <div class="price">
+                    <div class="value"><b>$</b>1,299</div>
+                  </div>
+                  <a href="#" class="btn btn-info btn-sm btn-buy">Buy Now!</a>
+                </li>
+                <li>
+                  <div class="ticket">
+                    <h5>New Ways to Promote<br>
+                    <small>6 Tickets left</small>
+                  </h5>
+                  </div>
+                  <div class="price">
+                    <div class="value"><b>$</b>1,799</div>
+                  </div>
+                  <a href="#" class="btn btn-info btn-sm btn-buy">Buy Now!</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer">
+              <button class="btn toggle-tickets">Show Tickets</button>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+    <footer>
+      <h3>Connect with us on:</h3>
+      <a target="_blank" class="social-icon" href="https://twitter.com/BitletTickets"><i class="fa fa-twitter"></i></a>
+      <a target="_blank" class="social-icon" href="https://www.facebook.com/BitletTickets/"><i class="fa fa-facebook-square"></i></a>
+      <a target="_blank" class="social-icon" href="https://github.com/BitletTickets"><i class="fa fa-github"></i></a>
+      <a target="_blank" class="social-icon" href="https://www.reddit.com/r/bitlet/"><i class="fa fa-reddit"></i></a>
+    </footer>
+  </div>
+
+</body>
+
+</html>
